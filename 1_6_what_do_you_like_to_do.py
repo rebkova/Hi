@@ -7,12 +7,20 @@
 # else:
 #     print("OK. Hobbies are {}.".format(list))
 
+
+
 hobbies = []
-while hobbies != "stop":
-    hobbies = input("What do you like to do?")
+
+while "stop" not in hobbies:
+    hobby = input("What do you like to do?")
+    hobbies.append(hobby)
+
+else:
+    del hobbies[-1]
+    print("OK. Hobbies are {}.".format(hobbies))
 
 
-print("OK. Hobbies are {}.".format(hobbies))
+
 
 
 
